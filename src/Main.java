@@ -19,6 +19,10 @@ public class Main {
         mentoria.setDescricao("Descrição da Mentoria Java");
         mentoria.setData(LocalDate.now());
 
+        Desafio desafio = new Desafio(NivelDesafio.BASICO);
+        desafio.setTitulo("Desafio: Cálculo da Mesada");
+        desafio.setDescricao("Escreve um programa em Java que tenha como entrada o número de meses e o valor e calcule a quantidade de dinheiro ganhado.");
+
         /*System.out.println(mentoria);
         System.out.println(curso1);
         System.out.println(curso2); */
@@ -29,6 +33,7 @@ public class Main {
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
+        bootcamp.getConteudos().add(desafio);
 
         Dev devMarcelo = new Dev();
         devMarcelo.setNome("Marcelo");
@@ -54,16 +59,5 @@ public class Main {
         System.out.println("XP: " + devCamila.calcularTotalXp());
 
         System.out.println(bootcamp.getDevsIncritos().toString());
-
-        Desafio desafio = new Desafio(NivelDesafio.BASICO);
-        desafio.setDescricao("Escreve um programa em Java que tenha como entrada o número de meses e o valor e calcule a quantidade de dinheiro ganhado.");
-        desafio.setTitulo("Desafio: Cálculo da Mesada");
-
-        System.out.println(desafio);
-
-
-
-
-
     }
 }
