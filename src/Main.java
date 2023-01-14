@@ -1,7 +1,4 @@
-import br.com.dio.desafio.dominio.Bootcamp;
-import br.com.dio.desafio.dominio.Curso;
-import br.com.dio.desafio.dominio.Dev;
-import br.com.dio.desafio.dominio.Mentoria;
+import br.com.dio.desafio.dominio.*;
 
 import java.time.LocalDate;
 
@@ -14,12 +11,12 @@ public class Main {
 
         Curso curso2 = new Curso();
         curso2.setTitulo("Curso JS");
-        curso2.setDescricao("Descrição curso de js");
+        curso2.setDescricao("Descrição curso de JS");
         curso2.setCargoHoraria(4);
 
         Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("mentoria de java");
-        mentoria.setDescricao("descrição da mentoria java");
+        mentoria.setTitulo("Mentoria de Java");
+        mentoria.setDescricao("Descrição da Mentoria Java");
         mentoria.setData(LocalDate.now());
 
         /*System.out.println(mentoria);
@@ -56,8 +53,13 @@ public class Main {
         System.out.println("Conteudos Concluidos Camila: " + devCamila.getConteudosConcluidos());
         System.out.println("XP: " + devCamila.calcularTotalXp());
 
+        System.out.println(bootcamp.getDevsIncritos().toString());
 
+        Desafio desafio = new Desafio(NivelDesafio.BASICO);
+        desafio.setDescricao("Escreve um programa em Java que tenha como entrada o número de meses e o valor e calcule a quantidade de dinheiro ganhado.");
+        desafio.setTitulo("Desafio: Cálculo da Mesada");
 
+        System.out.println(desafio);
 
 
 

@@ -1,11 +1,10 @@
 package br.com.dio.desafio.dominio;
 
 public class Curso extends Conteudo {
+
         private int cargoHoraria;
 
-        public Curso(){
-
-        }
+        public Curso(){}
 
         public int getCargoHoraria() {
                 return cargoHoraria;
